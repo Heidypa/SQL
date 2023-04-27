@@ -1,0 +1,19 @@
+CREATE TABLE store (id INTEGER Primary Key, Apparel text, Price integer, aisle INTEGER, material text);
+
+
+INSERT INTO store VALUES (1, "skirt", 20, 5, "cotton");
+INSERT INTO store VALUES (2, "shirt", 15, 10,"cotton");
+INSERT INTO store VALUES (3, "leggins", 30,12,"polyster");
+INSERT INTO store VALUES (4, "pants", 30,13,"polyster");
+
+SELECT * FROM store;
+
+--display the database ordered by price. 
+SELECT * FROM store
+ORDER BY price desc; 
+ 
+SELECT *FROM store WHERE price> 20 ;
+
+SELECT * FROM store WHERE aisle> 5 ORDER BY aisle;
+
+SELECT MAX(price) FROM store;
